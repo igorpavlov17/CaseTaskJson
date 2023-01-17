@@ -23,6 +23,8 @@ public class Database {
         }
     }
 
+    // Создание таблицы со столбцами, соответствующими полям класса Common.
+    // Первичный ключ отсутствует, так как входные параметры повторяются.
     public void createTable() {
         Statement statement = null;
         try {
@@ -46,6 +48,7 @@ public class Database {
         }
     }
 
+    // Вставка значений полей класса Common для одного объекта
     public void insertData(String lastUpdateFrom, String lastUpdateTo, @NotNull Common common) {
         Statement statement = null;
 
